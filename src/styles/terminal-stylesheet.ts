@@ -34,16 +34,6 @@ export const Top = styled.div`
   align-items: center;
 `;
 
-// export const Dot = styled.div`
-//   height: 10px;
-//   width: 10px;
-
-//   margin: 0 3px;
-
-//   border-radius: 50%;
-//   background: ${(props: IProps) => props.background};
-// `;
-
 export const TextArea = styled.div`
   color: #fff;
   font-family: monospace;
