@@ -5,6 +5,7 @@ import {
   TextArea,
 } from '../styles/terminal-stylesheet';
 import { RedDot, YellowDot, GreenDot } from '../styles/stylesheet';
+import { TextLine } from './TextLine';
 
 export const Terminal: React.FC = () => {
   return (
@@ -15,8 +16,10 @@ export const Terminal: React.FC = () => {
         <GreenDot size="10px" margin="0 4px" />
       </Top>
       <TextArea>
-        <Dif fontColor="#d9a1f0">const</Dif> <Dif fontColor="#fa6363">info</Dif>{' '}
-        <Dif fontColor="#d9a1f0">=</Dif> <Dif fontColor="#ffdf37">{'{'}</Dif>
+        <TextLine text="const" fontColor="#d9a1f0" space={true} />
+        <TextLine text="info: IInfo" fontColor="#fa6363" space={true} />
+        <TextLine text="=" fontColor="#d9a1f0" space={true} />
+        <TextLine text="{" fontColor="#ffdf37" space={true} />
         <br />
         name: <Dif fontColor="#8ed6df">"</Dif>
         <Dif fontColor="#aae478">Christina Persson</Dif>
