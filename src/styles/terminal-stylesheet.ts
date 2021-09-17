@@ -41,8 +41,6 @@ export const Top = styled.div`
   align-items: center;
 `;
 
-
-
 export const TextArea = styled.div`
   color: #fff;
   font-family: monospace;
