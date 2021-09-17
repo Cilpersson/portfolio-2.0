@@ -32,11 +32,14 @@ export const Terminal: React.FC = () => {
         <GreenDot size="10px" margin="0 4px" />
       </Top>
       <TextArea>
-        <Dif fontColor="#d9a1f0">const</Dif> <Dif fontColor="#fa6363">info</Dif>{' '}
+        <Dif fontColor="#d9a1f0">const</Dif>{' '}
+        <Dif fontColor="#fa6363">technical</Dif>{' '}
         <Dif fontColor="#d9a1f0">=</Dif> <Dif fontColor="#ffdf37">{'{'}</Dif>
         <br />
-        name: <Dif fontColor="#8ed6df">"</Dif>
-        <Dif fontColor="#aae478">Christina Persson</Dif>
+        currentEmployer: <Dif fontColor="#8ed6df">"</Dif>
+        <Dif fontColor="#aae478">
+          <a href="https://www.getaccept.com/">GetAccept</a>
+        </Dif>
         <Dif fontColor="#8ed6df">"</Dif>
         <Dif fontColor="#8ed6df">,</Dif>
         <br />

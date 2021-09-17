@@ -3,7 +3,14 @@ import styled from 'styled-components';
 interface IProps {
   fontColor?: string;
   background?: string;
+  spacing?: number;
 }
+
+const spacing = (times: number):string => {
+  return `${4 * times}px`
+}
+
+
 
 export const Dif = styled.span`
   color: ${(props: IProps) => props.fontColor};
@@ -34,15 +41,7 @@ export const Top = styled.div`
   align-items: center;
 `;
 
-// export const Dot = styled.div`
-//   height: 10px;
-//   width: 10px;
 
-//   margin: 0 3px;
-
-//   border-radius: 50%;
-//   background: ${(props: IProps) => props.background};
-// `;
 
 export const TextArea = styled.div`
   color: #fff;
