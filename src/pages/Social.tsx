@@ -7,7 +7,6 @@ import { SocialPage, SocialMediaButtons, A } from '../styles/stylesheet';
 export const Social = () => {
   return (
     <SocialPage>
-      <h2>Social</h2>
       <SocialMediaButtons>
         <A
           href="mailto:hello@christinapersson.se?subject=Let's do cool stuff together!"

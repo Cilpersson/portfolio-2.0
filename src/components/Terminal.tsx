@@ -5,26 +5,10 @@ import {
   TextArea,
 } from '../styles/terminal-stylesheet';
 import { RedDot, YellowDot, GreenDot } from '../styles/stylesheet';
+import { TextLine } from './TextLine';
 
 export const Terminal: React.FC = () => {
   return (
-    // <TerminalContainer>
-    //   <h2>Technical</h2>
-    //   <br />
-    //   <p>Javascript, Typescript</p>
-    //   <p>Sass, Styled-components</p>
-    //   <p>REST-api, graphql</p>
-    //   <p>Vue + Vuex, React + Redux</p>
-    //   <br />
-    //   <p>unit testing</p>
-    //   <p>jest</p>
-    //   <p>vue test utils</p>
-    //   <p>react testing library</p>
-    //   <br />
-    //   <p>Have some knowledge with</p>
-    //   <p>java</p>
-    //   <p>sql</p>
-    // </TerminalContainer>
     <TerminalContainer>
       <Top>
         <RedDot size="10px" margin="0 4px" boxShadow="1px 1px" />
@@ -32,9 +16,10 @@ export const Terminal: React.FC = () => {
         <GreenDot size="10px" margin="0 4px" />
       </Top>
       <TextArea>
-        <Dif fontColor="#d9a1f0">const</Dif>{' '}
-        <Dif fontColor="#fa6363">technical</Dif>{' '}
-        <Dif fontColor="#d9a1f0">=</Dif> <Dif fontColor="#ffdf37">{'{'}</Dif>
+        <TextLine text="const" fontColor="#d9a1f0" space={true} />
+        <TextLine text="info: IInfo" fontColor="#fa6363" space={true} />
+        <TextLine text="=" fontColor="#d9a1f0" space={true} />
+        <TextLine text="{" fontColor="#ffdf37" space={true} />
         <br />
         currentEmployer: <Dif fontColor="#8ed6df">"</Dif>
         <Dif fontColor="#aae478">
@@ -78,3 +63,21 @@ export const Terminal: React.FC = () => {
     </TerminalContainer>
   );
 };
+
+// <TerminalContainer>
+//   <h2>Technical</h2>
+//   <br />
+//   <p>Javascript, Typescript</p>
+//   <p>Sass, Styled-components</p>
+//   <p>REST-api, graphql</p>
+//   <p>Vue + Vuex, React + Redux</p>
+//   <br />
+//   <p>unit testing</p>
+//   <p>jest</p>
+//   <p>vue test utils</p>
+//   <p>react testing library</p>
+//   <br />
+//   <p>Have some knowledge with</p>
+//   <p>java</p>
+//   <p>sql</p>
+// </TerminalContainer>
